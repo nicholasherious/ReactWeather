@@ -2,7 +2,7 @@ const React = require('react');
 
 const Examples = (props) => {
     return (
-        <h2>Examples</h2>
+        <h2>Examples!</h2>
     )
 };
 
