@@ -1,25 +1,21 @@
 const React = require('react');
+const {Link} = require('react-router');
 
 const Examples = (props) => {
     return (
         <div>
         <h1 className="text-center">Examples</h1>
             <p>
-                This is a weather application built with React using the Complete React Web App developer course.
+                Here are a few locations to try out.
             </p>
-            <p>
-                Here are some of the tools I used
-            </p>
-            <p>
-                <ul>
-                    <li>
-                        <a href="https://facebook.github.io/react">React</a> Javascript framework
-                    </li>
-                    <li>
-                        <a href="http://openweathermap.org/">OpenWeatherMap API</a>
-                    </li>
-                </ul>
-            </p>
+            <ol>
+                <li>
+                    <Link to='/?location=Nassau'>Nassau, Bahamas</Link>
+                </li>
+                <li>
+                    <Link to='/?location=Miami'>Miami, Florida</Link>
+                </li>
+            </ol>
         </div>
     )
 };
